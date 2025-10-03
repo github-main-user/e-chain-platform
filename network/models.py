@@ -19,8 +19,10 @@ class NetworkNode(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        verbose_name = "Звено сети"
-        verbose_name_plural = "Звенья сети"
+        ordering = ["-created_at"]
+        indexes = [
+            models.Index(fields=["country"]),
+        ]
 
     def __str__(self):
         return f"{self.name} (lvl {self.level})"
@@ -35,13 +37,13 @@ class NetworkNode(models.Model):
                 break  # current node is not saved yet, validate later
 
             if current.pk in seen:
-                raise ValidationError("Циклическая зависимость поставщиков запрещена.")
+                raise ValidationError("Cyclic dependence of suppliers is not allowed")
 
             seen.add(current.pk)
 
             level += 1
             if level > 2:
-                raise ValidationError("Иерархия не может быть глубже 2.")
+                raise ValidationError("Hierarchy can't be deeper than 2")
 
             current = current.supplier
         self.level = level
