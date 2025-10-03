@@ -95,6 +95,7 @@ REST_FRAMEWORK = {
 SPECTACULAR_SETTINGS = {
     "TITLE": "Electrolic Chain Platform",
     "DESCRIPTION": "Hierarchical network management system for electronics sales with"
-    "REST API",
+    " REST API",
     "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
 }
