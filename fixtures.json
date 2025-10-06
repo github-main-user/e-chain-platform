@@ -1,0 +1,314 @@
+[
+{
+  "model": "network.networknode",
+  "pk": 1,
+  "fields": {
+    "name": "TechCorp Factory",
+    "email": "factory@techcorp.com",
+    "country": "China",
+    "city": "Shenzhen",
+    "street": "Tech Park Ave",
+    "house_number": "1A",
+    "supplier": null,
+    "level": 0,
+    "debt": "0.00",
+    "created_at": "2025-10-06T17:00:59.657Z"
+  }
+},
+{
+  "model": "network.networknode",
+  "pk": 2,
+  "fields": {
+    "name": "ElectroBuild Plant",
+    "email": "contact@electrobuild.cn",
+    "country": "China",
+    "city": "Guangzhou",
+    "street": "Industrial Road",
+    "house_number": "45",
+    "supplier": null,
+    "level": 0,
+    "debt": "0.00",
+    "created_at": "2025-10-06T17:00:59.662Z"
+  }
+},
+{
+  "model": "network.networknode",
+  "pk": 3,
+  "fields": {
+    "name": "MegaStore",
+    "email": "info@megastore.ru",
+    "country": "Russia",
+    "city": "Moscow",
+    "street": "Lenina",
+    "house_number": "10",
+    "supplier": 1,
+    "level": 1,
+    "debt": "152340.50",
+    "created_at": "2025-10-06T17:00:59.663Z"
+  }
+},
+{
+  "model": "network.networknode",
+  "pk": 4,
+  "fields": {
+    "name": "TechMarket",
+    "email": "sales@techmarket.eu",
+    "country": "Germany",
+    "city": "Berlin",
+    "street": "Hauptstrasse",
+    "house_number": "23B",
+    "supplier": 2,
+    "level": 1,
+    "debt": "87500.00",
+    "created_at": "2025-10-06T17:00:59.664Z"
+  }
+},
+{
+  "model": "network.networknode",
+  "pk": 5,
+  "fields": {
+    "name": "ИП Иванов",
+    "email": "ivanov@shop.ru",
+    "country": "Russia",
+    "city": "Kazan",
+    "street": "Baumana",
+    "house_number": "5",
+    "supplier": 3,
+    "level": 2,
+    "debt": "25000.75",
+    "created_at": "2025-10-06T17:00:59.665Z"
+  }
+},
+{
+  "model": "network.networknode",
+  "pk": 6,
+  "fields": {
+    "name": "ИП Сидоров",
+    "email": "sidorov@shop.ru",
+    "country": "Russia",
+    "city": "Saint Petersburg",
+    "street": "Nevsky",
+    "house_number": "100",
+    "supplier": 3,
+    "level": 2,
+    "debt": "12000.00",
+    "created_at": "2025-10-06T17:00:59.666Z"
+  }
+},
+{
+  "model": "network.networknode",
+  "pk": 7,
+  "fields": {
+    "name": "IP Müller",
+    "email": "mueller@store.de",
+    "country": "Germany",
+    "city": "Munich",
+    "street": "Karlplatz",
+    "house_number": "4",
+    "supplier": 4,
+    "level": 2,
+    "debt": "18350.00",
+    "created_at": "2025-10-06T17:00:59.667Z"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 1,
+  "fields": {
+    "node": 1,
+    "name": "Smartphone",
+    "model": "SMA-965",
+    "release_date": "2025-04-05"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 2,
+  "fields": {
+    "node": 1,
+    "name": "Laptop",
+    "model": "LAP-767",
+    "release_date": "2023-10-13"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 3,
+  "fields": {
+    "node": 2,
+    "name": "Router",
+    "model": "ROU-121",
+    "release_date": "2024-09-17"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 4,
+  "fields": {
+    "node": 2,
+    "name": "TV",
+    "model": "TV-216",
+    "release_date": "2021-09-23"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 5,
+  "fields": {
+    "node": 3,
+    "name": "Smartphone",
+    "model": "SMA-161",
+    "release_date": "2024-05-27"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 6,
+  "fields": {
+    "node": 3,
+    "name": "Laptop",
+    "model": "LAP-112",
+    "release_date": "2022-01-22"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 7,
+  "fields": {
+    "node": 4,
+    "name": "Router",
+    "model": "ROU-382",
+    "release_date": "2024-08-04"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 8,
+  "fields": {
+    "node": 4,
+    "name": "Smartwatch",
+    "model": "SMA-213",
+    "release_date": "2024-07-10"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 9,
+  "fields": {
+    "node": 4,
+    "name": "Headphones",
+    "model": "HEA-294",
+    "release_date": "2022-10-18"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 10,
+  "fields": {
+    "node": 4,
+    "name": "TV",
+    "model": "TV-684",
+    "release_date": "2025-03-31"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 11,
+  "fields": {
+    "node": 5,
+    "name": "TV",
+    "model": "TV-894",
+    "release_date": "2025-06-01"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 12,
+  "fields": {
+    "node": 5,
+    "name": "Smartwatch",
+    "model": "SMA-714",
+    "release_date": "2021-10-03"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 13,
+  "fields": {
+    "node": 5,
+    "name": "Smartphone",
+    "model": "SMA-258",
+    "release_date": "2023-02-21"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 14,
+  "fields": {
+    "node": 5,
+    "name": "Smartwatch",
+    "model": "SMA-432",
+    "release_date": "2022-04-05"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 15,
+  "fields": {
+    "node": 6,
+    "name": "Smartphone",
+    "model": "SMA-726",
+    "release_date": "2025-01-30"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 16,
+  "fields": {
+    "node": 6,
+    "name": "Smartphone",
+    "model": "SMA-268",
+    "release_date": "2025-05-27"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 17,
+  "fields": {
+    "node": 6,
+    "name": "Smartphone",
+    "model": "SMA-716",
+    "release_date": "2022-11-05"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 18,
+  "fields": {
+    "node": 7,
+    "name": "Headphones",
+    "model": "HEA-774",
+    "release_date": "2024-09-27"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 19,
+  "fields": {
+    "node": 7,
+    "name": "Headphones",
+    "model": "HEA-921",
+    "release_date": "2021-09-04"
+  }
+},
+{
+  "model": "network.product",
+  "pk": 20,
+  "fields": {
+    "node": 7,
+    "name": "Smartwatch",
+    "model": "SMA-612",
+    "release_date": "2025-03-13"
+  }
+}
+]
